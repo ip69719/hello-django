@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ad Item</title>
 </head>
 <body>
-    <h1>Add a Todo item</h1>
+    <h1>Add a Todo Item/h1>
     <form method='POST' action='add'> <!--add url to submit the form to-->
         {% csrf_token %} <!--special template tag to the form as a security measure-->
         {{ form.as_p }}
