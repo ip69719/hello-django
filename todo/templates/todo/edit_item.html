@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Add a Todo item</h1>
-    <form method='POST' action='add'> <!--add url to submit the form to-->
-        {% csrf_token %} <!--special template tag to the form as a security measure-->
+    <h1>Edit a Todo item</h1>
+    <form method='POST'>
+        {% csrf_token %}
         {{ form.as_p }}
         <div>
             <p>
-                <button type="submit">Add Item</button>
+                <button type="submit">Update Item</button>
             </p>
         </div>
     </form>
